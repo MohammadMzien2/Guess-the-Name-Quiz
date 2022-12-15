@@ -55,3 +55,16 @@ function startGame() {
 
     loadNext();
 }
+
+function loadNext(){
+    numOfQuestions++;
+    if(numOfQuestions <= selectedNum){
+        question = {
+            id: '',
+            image: '',
+            names: [
+            '', '', '', ''
+            ]
+        };
+    }
+}
