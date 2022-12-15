@@ -21,3 +21,6 @@ function selcectnumberOfChocie(num, id){
     }
     loadArray(num);
 }
+function selectNameOption(id){
+    
+}
