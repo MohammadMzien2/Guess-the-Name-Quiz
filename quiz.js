@@ -53,4 +53,5 @@ function startGame() {
     document.getElementsByClassName('check')[0].style.display = 'flex';
     document.getElementsByClassName('next')[0].style.display = 'flex';
 
+    loadNext();
 }
