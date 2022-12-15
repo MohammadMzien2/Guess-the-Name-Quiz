@@ -77,4 +77,7 @@ function loadNext(){
         }
         loadQuestion();
     }
+    else{
+        endOfTheGame();
+    }
 }
