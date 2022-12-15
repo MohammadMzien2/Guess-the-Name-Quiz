@@ -106,7 +106,7 @@ h1 {
     background-color: rgb(191, 146, 91);
 }
 
-.imageBox{
+.imageBox {
     width: 62vw;
     height: 30vh;
     margin: 10px;
@@ -118,8 +118,34 @@ h1 {
     justify-content: center;
 }
 
-.imageBoxImg{
+.imageBoxImg {
     height: 130%;
     display: none;
 }
 
+.nameList {
+    display: flex;
+    width: 70vw;
+    height: 8vh;
+    margin: 30px;
+    padding: 5px;
+    background-color: #191919;
+    justify-content: space-around;
+}
+
+.nameOption {
+    display: none;
+    padding: 1px;
+    margin-bottom: 10px;
+    margin: 10px;
+    width: 30vw;
+    height: 12vh;
+    border-radius: 15px;
+    font-size: larger;
+    background-color: rgb(184, 121, 43);
+    color: white;
+}
+
+.nameOption:hover {
+    background-color: rgb(191, 146, 91);
+}
