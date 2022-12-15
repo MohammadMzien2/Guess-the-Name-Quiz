@@ -149,3 +149,6 @@ h1 {
 .nameOption:hover {
     background-color: rgb(191, 146, 91);
 }
+.correct-answer{
+    background-color: green;
+}
