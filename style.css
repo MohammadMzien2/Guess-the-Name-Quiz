@@ -105,3 +105,21 @@ h1 {
 .student43:hover {
     background-color: rgb(191, 146, 91);
 }
+
+.imageBox{
+    width: 62vw;
+    height: 30vh;
+    margin: 10px;
+    padding: 5px;
+    background-color: #191919;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageBoxImg{
+    height: 130%;
+    display: none;
+}
+
