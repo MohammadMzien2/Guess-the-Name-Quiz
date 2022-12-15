@@ -152,3 +152,67 @@ h1 {
 .correct-answer{
     background-color: green;
 }
+
+.menu{
+    display: flex;
+    width: 62vw;
+    height: 8vh;
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    background-color: #191919;
+}
+.check{
+    display: none;
+    width: 30vw;
+    height: 7vh;
+    padding: 12px;
+    margin: 12px;
+    font-size: larger;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(184, 121, 43);
+    align-items: center;
+    justify-content: center;
+}
+.next{
+    display: none;
+    width: 30vw;
+    height: 7vh;
+    padding: 12px;
+    margin: 12px;
+    font-size: larger;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(184, 121, 43);
+    align-items: center;
+    justify-content: center;
+}
+.check:hover{
+    background-color: rgb(191, 146, 91);
+}
+
+.next:hover{
+    background-color: rgb(191, 146, 91);
+}
+
+.restart{
+    display: none;
+    width: 30vw;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 15px;
+    color: white;
+    font-size: larger;
+    background-color: rgb(184, 121, 43);
+    align-items: center;
+    justify-content: center;
+}
+
+.restart:hover{
+    background-color: rgb(191, 146, 91);
+}
+.selectedButton{
+    outline: 4px solid #82eefd;
+}
