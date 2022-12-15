@@ -30,3 +30,17 @@ function selectNameOption(id){
     }
     document.querySelector('.check').disabled = false;
 }
+function loadArray(num){
+    let k = 0;
+    let j = [];
+    while (k < num){
+        let randomPerson = Math.floor(Math.random () * students.length);
+        if (!j.includes(students[randomPerson].id)){
+            arrayOfStudent.push(Object.assign({}, students[randomPerson]));
+            j.push(students[randomPerson].id);
+            l++
+        }
+        startGame();
+    }
+    
+}
