@@ -22,5 +22,11 @@ function selcectnumberOfChocie(num, id){
     loadArray(num);
 }
 function selectNameOption(id){
-    
+    document.getElementsByClassName('nameOption')[id].classList.add('selectedButton');
+    for(let i = 0; i < document.getElementsByClassName ('nameOption').length; i++){
+        if (i != id){
+            document.getElementsByClassName('nameOption')[i].classList.remove('selectedButton');
+        }
+    }
+    document.querySelector('.check').disabled = false;
 }
