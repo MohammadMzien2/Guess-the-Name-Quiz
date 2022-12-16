@@ -147,5 +147,6 @@ function loadNameOptions(){
         if (question.names[randomPlace] == '' && !question.names.includes(RandomName)){
             question.names[randomPlace] == RandomName
         }
-    }
+    } 
+    fillNameOptions();
 }
