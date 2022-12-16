@@ -99,5 +99,12 @@ function endOfTheGame(){
         document.getElementsByClassName('student')[i].disabled = true;
         document.getElementsByClassName('student')[i].classList.remove('selectedButton');
     }
-    
+    for (let i = 0; i < document.getElementsByClassName('nameOption').length; i++){
+        document.getElementsByClassName('nameOption')[i].classList.remove('selectedButton');
+        document.getElementsByClassName('nameOption')[i].classList.remove('correct-answer');
+        document.getElementsByClassName('nameOption')[i].disabled = true;
+        document.getElementsByClassName('nameOption')[i].style.display = 'none';
+    }
+    document.querySelector('.check').disabled = true;
+    document.querySelector('.next').disabled = true;
 }
