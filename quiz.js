@@ -125,3 +125,12 @@ function loadQuestion() {
     loadPhoto();
     document.querySelector('.next').disabled = true;
 }
+
+function loadPhoto(){
+    while(question.image == ''){
+        if(arrayOfStudent [question.id].image != ' '){
+            question.image = arrayOfStudent[question.id].image;
+            arrayOfStudent[question.id].image = '';
+        }
+    }
+}
