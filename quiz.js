@@ -128,6 +128,7 @@ function loadQuestion() {
 
 function loadPhoto(){
     while(question.image == ''){
+        question.id = Math.floor(Math.random() * arrayOfStudent.length);
         if(arrayOfStudent [question.id].image != ' '){
             question.image = arrayOfStudent[question.id].image;
             arrayOfStudent[question.id].image = '';
