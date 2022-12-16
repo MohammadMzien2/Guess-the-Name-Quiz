@@ -136,6 +136,6 @@ function loadPhoto(){
         document.querySelector('.imageBoxText').style.display = 'none';
         document.querySelector('.imageBoxImg').style.display = 'inline-block';
         document.querySelector('.imageBoxImg').src = question.image;
-
     }
+    loadNameOptions();
 }
