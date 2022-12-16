@@ -108,3 +108,11 @@ function endOfTheGame(){
     document.querySelector('.check').disabled = true;
     document.querySelector('.next').disabled = true;
 }
+function restartGame(){
+    document.querySelector('.imageBoxText').style.display = 'block';
+    document.querySelector('.restart').style.display = 'none'
+    document.querySelector('.result').innerHTML = ''
+
+    
+
+}
