@@ -1,44 +1,47 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess-the-Name-Quiz</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
 
-        <h1>Guess The Name Of Students</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guess-the-Name-Quiz</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-        <div class="result"></div>
+    <body>
+        <div class="container">
 
-        <div class="howMany">
-            <span>How Many Persons Will you Guess? </span>
-            <div class="group">
-                <button onclick= selectHowMany(10,0) class="Student10 Student">10</button>
-                <button onclick= selectHowMany(20,1) class="student20 student">20</button>
-                <button onclick= selectHowMany(43,2) class="student43 student">44</button>
+            <h1>Guess The Name Of Students</h1>
+
+            <div class="result"></div>
+
+            <div class="howMany">
+                <span>How Many Persons Will you Guess? </span>
+                <div class="group">
+                    <button onclick=selectHowMany(10,0) class="Student10 Student">10</button>
+                    <button onclick=selectHowMany(20,1) class="student20 student">20</button>
+                    <button onclick=selectHowMany(43,2) class="student43 student">44</button>
+                </div>
+            </div>
+            <div class="imageBox" id="photo">
+                <p class="imageBoxText"></p>
+                <button onclick=restartGame() class="restart">Restart game</button>
+                <img src="./assets/images/students/abdi_ali.jpg" alt="" class="imageBoxImg" />
+            </div>
+            <div class="nameList">
+                <button class="nameOption" onclick=selectNameOption(0) id="student1"></button>
+                <button class="nameOption" onclick=selectNameOption(1) id="student2"></button>
+                <button class="nameOption" onclick=selectNameOption(2) id="student3"></button>
+                <button class="nameOption" onclick=selectNameOption(3) id="student4"></button>
+            </div>
+            <div class="menu">
+                <button class="check" onclick=checkAnswer()>Check</button>
+                <button class="next" onclick=loadNext()>Next</button>
             </div>
         </div>
-        <div class="imageBox" id="photo">
-            <p class="imageBoxText"></p>
-            <button onclick=restartGame() class="restart">Restart game</button>
-            <img src="./assets/images/students/abdi_ali.jpg" alt="" class="imageBoxImg"/>
-        </div>
-        <div class="nameList">
-            <button class="nameOption" onclick= selectNameOption(0) id="student1"></button>
-            <button class="nameOption" onclick= selectNameOption(1) id="student2"></button>
-            <button class="nameOption" onclick= selectNameOption(2) id="student3"></button>
-            <button class="nameOption" onclick= selectNameOption(3) id="student4"></button>
-        </div>
-        <div class="menu">
-            <button class="check" onclick= checkAnswer()>Check</button>
-            <button class="next" onclick= loadNext()>Next</button>
-        </div>
-    </div>
 
-    <script src="students.js"></script>
-    <script src="quiz.js"></script>
-</body>
+        <script src="students.js"></script>
+        <script src="quiz.js"></script>
+    </body>
+
 </html>

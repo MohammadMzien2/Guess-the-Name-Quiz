@@ -174,7 +174,7 @@ const students = [
 		name: "Philippe Le Gall",
 		image: "assets/images/students/philippe_legall.jpg",
 	},
-	{	
+	{
 		id: 35,
 		name: "Sandra Vidalin",
 		image: "assets/images/students/sandra_vidalin.jpg",

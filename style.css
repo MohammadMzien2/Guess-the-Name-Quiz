@@ -147,11 +147,12 @@ h1 {
 .nameOption:hover {
     background-color: rgb(191, 146, 91);
 }
-.correct-answer{
+
+.correct-answer {
     background-color: green;
 }
 
-.menu{
+.menu {
     display: flex;
     width: 62vw;
     height: 8vh;
@@ -160,7 +161,8 @@ h1 {
     justify-content: center;
     background-color: #191919;
 }
-.check{
+
+.check {
     display: none;
     width: 30vw;
     height: 7vh;
@@ -173,7 +175,8 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-.next{
+
+.next {
     display: none;
     width: 30vw;
     height: 7vh;
@@ -186,15 +189,16 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-.check:hover{
+
+.check:hover {
     background-color: rgb(191, 146, 91);
 }
 
-.next:hover{
+.next:hover {
     background-color: rgb(191, 146, 91);
 }
 
-.restart{
+.restart {
     display: none;
     width: 30vw;
     height: 10vh;
@@ -208,55 +212,65 @@ h1 {
     justify-content: center;
 }
 
-.restart:hover{
+.restart:hover {
     background-color: rgb(191, 146, 91);
 }
-.selectedButton{
+
+.selectedButton {
     outline: 4px solid #82eefd;
 }
 
-@media screen and (max-width: 600px){
-    .container{
+@media screen and (max-width: 600px) {
+    .container {
         width: 100%;
     }
-    h1{
+
+    h1 {
         font-size: 32px;
     }
-    .result{
+
+    .result {
         width: 100%;
         height: 8vw;
         font-size: 30px;
     }
-    .imageBox{
+
+    .imageBox {
         width: 120%;
     }
-    .nameList{
+
+    .nameList {
         width: 100%;
         height: auto;
         margin: 0%;
         flex-direction: column;
         align-items: center;
     }
-    .nameOption{
+
+    .nameOption {
         width: 90%;
         margin: 12px;
     }
-    .menu{
+
+    .menu {
         width: 100%;
         height: auto;
         margin: 0%;
         flex-direction: column;
         align-items: center;
     }
-    .check{
+
+    .check {
         width: 90%;
         margin: 20px;
     }
-    .next{
+
+    .next {
         width: 90%;
         margin: 20px;
     }
-    .restart{
+
+    .restart {
         width: 40vw;
         height: 15vw;
         margin: 15px;
