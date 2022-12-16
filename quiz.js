@@ -162,7 +162,7 @@ function checkAnswer(){
         if(document.getElementsByClassName('nameOption')[i].innerHTML = arrayOfStudent [question.id].name){
             document.getElementsByClassName('nameOption')[i].classList.add('correct-answer');
             if(document.getElementsByClassName('nameOption')[i].classList.contains('selectedButton')){
-                
+                correctAnswers++
             }
         }
         document.querySelector('.next').disabled = false;
