@@ -121,3 +121,6 @@ function restartGame() {
         document.getElementsByClassName('student')[i].disabled = false;
     }
 }
+function loadQuestion() {
+    document.querySelector('.next').disabled = true;
+}
