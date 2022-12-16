@@ -133,5 +133,9 @@ function loadPhoto(){
             question.image = arrayOfStudent[question.id].image;
             arrayOfStudent[question.id].image = '';
         }
+        document.querySelector('.imageBoxText').style.display = 'none';
+        document.querySelector('.imageBoxImg').style.display = 'inline-block';
+        document.querySelector('.imageBoxImg').src = question.image;
+
     }
 }
