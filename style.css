@@ -11,7 +11,6 @@ h1 {
     text-align: center;
     font-size: 40px;
     color: white;
-    text-decoration: underline rgb(184, 121, 43);
 }
 
 .result {
@@ -33,7 +32,7 @@ h1 {
     align-items: center;
 }
 
-.numberOfChocie {
+.howMany {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -45,9 +44,8 @@ h1 {
     align-items: center;
 }
 
-.numberOfChoice span {
+.howMany span {
     font-size: 30px;
-    text-decoration: underline rgb(184, 121, 43);
 }
 
 .group {
