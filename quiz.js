@@ -95,5 +95,9 @@ function endOfTheGame(){
     document.querySelector('.restart').style.display= 'flex';
     document.querySelector('.imageBoxImg').style.display= 'none';
 
-
+    for (let i = 0; i < document,getElementsByClassName('student').length; i++){
+        document.getElementsByClassName('student')[i].disabled = true;
+        document.getElementsByClassName('student')[i].classList.remove('selectedButton');
+    }
+    
 }
