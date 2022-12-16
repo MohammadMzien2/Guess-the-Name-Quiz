@@ -168,3 +168,6 @@ function checkAnswer(){
         document.querySelector('.next').disabled = false;
     }
 }
+function showResult(){
+    document.querySelector('.result').innerHTML = correctAnswers + ' / ' + arrayOfStudent.length;
+}
