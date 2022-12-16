@@ -122,5 +122,6 @@ function restartGame() {
     }
 }
 function loadQuestion() {
+    loadPhoto();
     document.querySelector('.next').disabled = true;
 }
