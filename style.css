@@ -64,7 +64,7 @@ h1 {
     margin: 5px;
     width: 15vw;
     height: 6vh;
-    background-color: rgb(184, 121, 43);
+    background-color: #abf6fbb5;
     color: white;
     font-size: larger;
     border-radius: 15px;
@@ -75,7 +75,7 @@ h1 {
     margin: 5px;
     width: 15vw;
     height: 6vh;
-    background-color: rgb(184, 121, 43);
+    background-color: #abf6fbb5;
     color: white;
     font-size: larger;
     border-radius: 15px;
@@ -86,22 +86,22 @@ h1 {
     margin: 5px;
     width: 15vw;
     height: 6vh;
-    background-color: rgb(184, 121, 43);
+    background-color: #abf6fbb5;
     color: white;
     font-size: larger;
     border-radius: 15px;
 }
 
 .student10:hover {
-    background-color: rgb(191, 146, 91);
+    background-color: #7ec5cab5;
 }
 
 .student20:hover {
-    background-color: rgb(191, 146, 91);
+    background-color: #7ec5cab5;
 }
 
 .student43:hover {
-    background-color: rgb(191, 146, 91);
+    background-color: #7ec5cab5;
 }
 
 .imageBox {
@@ -140,12 +140,12 @@ h1 {
     height: 12vh;
     border-radius: 15px;
     font-size: larger;
-    background-color: rgb(184, 121, 43);
+    background-color: #abf6fbb5;
     color: white;
 }
 
 .nameOption:hover {
-    background-color: rgb(191, 146, 91);
+    background-color: #7ec5cab5;
 }
 
 .correct-answer {
@@ -171,7 +171,7 @@ h1 {
     font-size: larger;
     color: white;
     border-radius: 15px;
-    background-color: rgb(184, 121, 43);
+    background-color: #abf6fbb5;
     align-items: center;
     justify-content: center;
 }
@@ -185,17 +185,17 @@ h1 {
     font-size: larger;
     color: white;
     border-radius: 15px;
-    background-color: rgb(184, 121, 43);
+    background-color: #abf6fbb5;
     align-items: center;
     justify-content: center;
 }
 
 .check:hover {
-    background-color: rgb(191, 146, 91);
+    background-color: #7ec5cab5;
 }
 
 .next:hover {
-    background-color: rgb(191, 146, 91);
+    background-color: #7ec5cab5;
 }
 
 .restart {
@@ -207,13 +207,13 @@ h1 {
     border-radius: 15px;
     color: white;
     font-size: larger;
-    background-color: rgb(184, 121, 43);
+    background-color: #abf6fbb5;
     align-items: center;
     justify-content: center;
 }
 
 .restart:hover {
-    background-color: rgb(191, 146, 91);
+    background-color: #7ec5cab5;
 }
 
 .selectedButton {
