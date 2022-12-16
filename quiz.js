@@ -126,10 +126,10 @@ function loadQuestion() {
     document.querySelector('.next').disabled = true;
 }
 
-function loadPhoto(){
-    while(question.image == ''){
+function loadPhoto() {
+    while (question.image == '') {
         question.id = Math.floor(Math.random() * arrayOfStudent.length);
-        if(arrayOfStudent [question.id].image != ' '){
+        if (arrayOfStudent[question.id].image != ' ') {
             question.image = arrayOfStudent[question.id].image;
             arrayOfStudent[question.id].image = '';
         }
@@ -139,14 +139,20 @@ function loadPhoto(){
     }
     loadNameOptions();
 }
-function loadNameOptions(){
-    question.names[Math.floor(Math.random() * 4)] = arrayOfStudent [question.id].name;
-    while(question.names.includes('')){
-        let randomPlace = Math.floor(Math.random () * 4);
+function loadNameOptions() {
+    question.names[Math.floor(Math.random() * 4)] = arrayOfStudent[question.id].name;
+    while (question.names.includes('')) {
+        let randomPlace = Math.floor(Math.random() * 4);
         let RandomName = students[Math.floor(Math.random * 44)].name;
-        if (question.names[randomPlace] == '' && !question.names.includes(RandomName)){
+        if (question.names[randomPlace] == '' && !question.names.includes(RandomName)) {
             question.names[randomPlace] == RandomName
         }
-    } 
+    }
     fillNameOptions();
+}
+
+function fillNameOptions() {
+    for (let i = 0; i < 4; i++) {
+        document.getElementsByClassName('nameOption')[i].innerHTML = question.names[i];
+    }
 }
