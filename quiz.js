@@ -140,5 +140,12 @@ function loadPhoto(){
     loadNameOptions();
 }
 function loadNameOptions(){
-    question.names[Math.floor(Math.random() * 4)] = arrayOfStudent [question.id].name
+    question.names[Math.floor(Math.random() * 4)] = arrayOfStudent [question.id].name;
+    while(question.names.includes('')){
+        let randomPlace = Math.floor(Math.random () * 4);
+        let RandomName = students[Math.floor(Math.random * 44)].name;
+        if (question.names[randomPlace] == '' && !question.names.includes(RandomName)){
+            question.names[randomPlace] == RandomName
+        }
+    }
 }
