@@ -56,20 +56,20 @@ function startGame() {
     loadNext();
 }
 
-function loadNext(){
+function loadNext() {
     numOfQuestions++;
-    if(numOfQuestions <= selectedNum){
+    if (numOfQuestions <= selectedNum) {
         question = {
             id: '',
             image: '',
             names: [
-            '', '', '', ''
+                '', '', '', ''
             ]
         };
         document.querySelector('.check').disabled = true;
         document.querySelector('.next').disabled = true;
 
-        for (let i = 0; i < document.getElementsByClassName('nameOption').length; i++){
+        for (let i = 0; i < document.getElementsByClassName('nameOption').length; i++) {
             document.getElementsByClassName('nameOption')[i].disabled = false;
             document.getElementsByClassName('nameOption')[i].classList.remove('selectedButton');
             document.getElementsByClassName('nameOption')[i].classList.remove('correct-answer');
@@ -77,11 +77,11 @@ function loadNext(){
         }
         loadQuestion();
     }
-    else{
+    else {
         endOfTheGame();
     }
 }
-function endOfTheGame(){
+function endOfTheGame() {
     showResult();
 
     correctAnswers = 0;
@@ -91,15 +91,15 @@ function endOfTheGame(){
     document.getElementsByClassName('check')[0].style.display = 'none';
     document.getElementsByClassName('next')[0].style.display = 'none';
 
-    document.querySelector('.imageBoxText').style.display= 'none';
-    document.querySelector('.restart').style.display= 'flex';
-    document.querySelector('.imageBoxImg').style.display= 'none';
+    document.querySelector('.imageBoxText').style.display = 'none';
+    document.querySelector('.restart').style.display = 'flex';
+    document.querySelector('.imageBoxImg').style.display = 'none';
 
-    for (let i = 0; i < document,getElementsByClassName('student').length; i++){
+    for (let i = 0; i < document, getElementsByClassName('student').length; i++) {
         document.getElementsByClassName('student')[i].disabled = true;
         document.getElementsByClassName('student')[i].classList.remove('selectedButton');
     }
-    for (let i = 0; i < document.getElementsByClassName('nameOption').length; i++){
+    for (let i = 0; i < document.getElementsByClassName('nameOption').length; i++) {
         document.getElementsByClassName('nameOption')[i].classList.remove('selectedButton');
         document.getElementsByClassName('nameOption')[i].classList.remove('correct-answer');
         document.getElementsByClassName('nameOption')[i].disabled = true;
@@ -108,11 +108,16 @@ function endOfTheGame(){
     document.querySelector('.check').disabled = true;
     document.querySelector('.next').disabled = true;
 }
-function restartGame(){
+function restartGame() {
     document.querySelector('.imageBoxText').style.display = 'block';
     document.querySelector('.restart').style.display = 'none'
     document.querySelector('.result').innerHTML = ''
 
-    
+    document.querySelector('student')[0].disabled = false;
+    document.querySelector('student')[1].disabled = false;
+    document.querySelector('student')[2].disabled = false;
 
+    for (let i = 0; i < document.getElementsByClassName('student').length; i++) {
+        document.getElementsByClassName('student')[i].disabled = false;
+    }
 }
