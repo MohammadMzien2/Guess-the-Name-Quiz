@@ -139,3 +139,6 @@ function loadPhoto(){
     }
     loadNameOptions();
 }
+function loadNameOptions(){
+    question.names[Math.floor(Math.random() * 4)] = arrayOfStudent [question.id].name
+}
