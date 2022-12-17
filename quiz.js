@@ -10,7 +10,7 @@ let correctAnswers = 0;
 let selectedNum = 0;
 let numOfQuestions = 0;
 
-function selcectnumberOfChocie(num, id) {
+function selectHowMany(num, id) {
     selectedNum = num;
     document.getElementsByClassName('student')[id].classList.add('selectedButton');
     for (let i = 0; i < document.getElementsByClassName('student').length; i++) {
@@ -30,6 +30,7 @@ function selectNameOption(id) {
     }
     document.querySelector('.check').disabled = false;
 }
+
 function loadArray(num) {
     let k = 0;
     let j = [];
@@ -38,16 +39,16 @@ function loadArray(num) {
         if (!j.includes(students[randomPerson].id)) {
             arrayOfStudent.push(Object.assign({}, students[randomPerson]));
             j.push(students[randomPerson].id);
-            l++
+            k++
         }
-        startGame();
     }
+    startGame();
 }
 
 function startGame() {
     for (let i = 0; i < document.getElementsByClassName('nameOption').length; i++) {
         document.getElementsByClassName('nameOption')[i].disabled = false;
-        document.getElementsByClassName('nameOption')[i].style.display = block;
+        document.getElementsByClassName('nameOption')[i].style.display = 'block';
     }
 
     document.getElementsByClassName('check')[0].style.display = 'flex';
@@ -95,7 +96,7 @@ function endOfTheGame() {
     document.querySelector('.restart').style.display = 'flex';
     document.querySelector('.imageBoxImg').style.display = 'none';
 
-    for (let i = 0; i < document, getElementsByClassName('student').length; i++) {
+    for (let i = 0; i < document.getElementsByClassName('student').length; i++) {
         document.getElementsByClassName('student')[i].disabled = true;
         document.getElementsByClassName('student')[i].classList.remove('selectedButton');
     }
@@ -108,14 +109,15 @@ function endOfTheGame() {
     document.querySelector('.check').disabled = true;
     document.querySelector('.next').disabled = true;
 }
+
 function restartGame() {
     document.querySelector('.imageBoxText').style.display = 'block';
     document.querySelector('.restart').style.display = 'none'
-    document.querySelector('.result').innerHTML = ''
+    document.querySelector('.result').innerHTML = '';
 
-    document.querySelector('student')[0].disabled = false;
-    document.querySelector('student')[1].disabled = false;
-    document.querySelector('student')[2].disabled = false;
+    document.getElementsByClassName('student')[0].disabled = false;
+    document.getElementsByClassName('student')[1].disabled = false;
+    document.getElementsByClassName('student')[2].disabled = false;
 
     for (let i = 0; i < document.getElementsByClassName('student').length; i++) {
         document.getElementsByClassName('student')[i].disabled = false;
@@ -129,23 +131,23 @@ function loadQuestion() {
 function loadPhoto() {
     while (question.image == '') {
         question.id = Math.floor(Math.random() * arrayOfStudent.length);
-        if (arrayOfStudent[question.id].image != ' ') {
+        if (arrayOfStudent[question.id].image != '') {
             question.image = arrayOfStudent[question.id].image;
             arrayOfStudent[question.id].image = '';
         }
-        document.querySelector('.imageBoxText').style.display = 'none';
-        document.querySelector('.imageBoxImg').style.display = 'inline-block';
-        document.querySelector('.imageBoxImg').src = question.image;
     }
+    document.querySelector('.imageBoxText').style.display = 'none';
+    document.querySelector('.imageBoxImg').style.display = 'inline-block';
+    document.querySelector('.imageBoxImg').src = question.image;
     loadNameOptions();
 }
 function loadNameOptions() {
     question.names[Math.floor(Math.random() * 4)] = arrayOfStudent[question.id].name;
     while (question.names.includes('')) {
         let randomPlace = Math.floor(Math.random() * 4);
-        let RandomName = students[Math.floor(Math.random * 44)].name;
-        if (question.names[randomPlace] == '' && !question.names.includes(RandomName)) {
-            question.names[randomPlace] == RandomName
+        let randomName = students[Math.floor(Math.random() * 44)].name;
+        if (question.names[randomPlace] == '' && !question.names.includes(randomName)) {
+            question.names[randomPlace] = randomName; 
         }
     }
     fillNameOptions();
@@ -159,14 +161,15 @@ function fillNameOptions() {
 function checkAnswer() {
     for (let i = 0; i < document.getElementsByClassName('nameOption').length; i++) {
         document.getElementsByClassName('nameOption')[i].disabled = true;
-        if (document.getElementsByClassName('nameOption')[i].innerHTML = arrayOfStudent[question.id].name) {
+        if (document.getElementsByClassName('nameOption')[i].innerHTML == arrayOfStudent[question.id].name) {
             document.getElementsByClassName('nameOption')[i].classList.add('correct-answer');
             if (document.getElementsByClassName('nameOption')[i].classList.contains('selectedButton')) {
+                correctAnswers++
             }
         }
         document.querySelector('.next').disabled = false;
     }
 }
-function showResult(){
+function showResult() {
     document.querySelector('.result').innerHTML = correctAnswers + ' / ' + arrayOfStudent.length;
 }
