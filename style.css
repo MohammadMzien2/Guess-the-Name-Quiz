@@ -144,7 +144,7 @@ h1 {
     font-size: larger;
     color: white;
     border-radius: 15px;
-    background-color: #59af1bb5;
+    background-color: #b41d1db5;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -159,18 +159,18 @@ h1 {
     font-size: larger;
     color: white;
     border-radius: 15px;
-    background-color: #b41d1db5;
     align-items: center;
     justify-content: center;
+    background-color: #59af1bb5;
     cursor: pointer;
 }
 
 .check:hover {
-    background-color: #bffbabb5;
+    background-color: #c14848b5;
 }
 
 .next:hover {
-    background-color: #c14848b5;
+    background-color: #bffbabb5;
 }
 
 .restart {
