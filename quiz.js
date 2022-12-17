@@ -10,7 +10,7 @@ let correctAnswers = 0;
 let selectedNum = 0;
 let numOfQuestions = 0;
 
-function selecthowMany(num, id) {
+function selcectnumberOfChocie(num, id) {
     selectedNum = num;
     document.getElementsByClassName('student')[id].classList.add('selectedButton');
     for (let i = 0; i < document.getElementsByClassName('student').length; i++) {
@@ -38,7 +38,7 @@ function loadArray(num) {
         if (!j.includes(students[randomPerson].id)) {
             arrayOfStudent.push(Object.assign({}, students[randomPerson]));
             j.push(students[randomPerson].id);
-            k++
+            l++
         }
         startGame();
     }
@@ -47,7 +47,7 @@ function loadArray(num) {
 function startGame() {
     for (let i = 0; i < document.getElementsByClassName('nameOption').length; i++) {
         document.getElementsByClassName('nameOption')[i].disabled = false;
-        document.getElementsByClassName('nameOption')[i].style.display = 'block';
+        document.getElementsByClassName('nameOption')[i].style.display = block;
     }
 
     document.getElementsByClassName('check')[0].style.display = 'flex';
@@ -140,12 +140,12 @@ function loadPhoto() {
     loadNameOptions();
 }
 function loadNameOptions() {
-    question.names[Math.floor(Math.random() * 4)] = arrayOfStudent[question.id].names;
+    question.names[Math.floor(Math.random() * 4)] = arrayOfStudent[question.id].name;
     while (question.names.includes('')) {
         let randomPlace = Math.floor(Math.random() * 4);
-        let randomName = students[Math.floor(Math.random() * 44)].name;
-        if (question.names[randomPlace] == '' && !question.names.includes(randomName)) {
-            question.names[randomPlace] == randomName
+        let RandomName = students[Math.floor(Math.random * 44)].name;
+        if (question.names[randomPlace] == '' && !question.names.includes(RandomName)) {
+            question.names[randomPlace] == RandomName
         }
     }
     fillNameOptions();
@@ -156,13 +156,12 @@ function fillNameOptions() {
         document.getElementsByClassName('nameOption')[i].innerHTML = question.names[i];
     }
 }
-function checkAnswer(){
-    for(let i = 0; i < document.getElementsByClassName('nameOption').length; i++){
+function checkAnswer() {
+    for (let i = 0; i < document.getElementsByClassName('nameOption').length; i++) {
         document.getElementsByClassName('nameOption')[i].disabled = true;
-        if(document.getElementsByClassName('nameOption')[i].innerHTML = arrayOfStudent [question.id].name){
+        if (document.getElementsByClassName('nameOption')[i].innerHTML = arrayOfStudent[question.id].name) {
             document.getElementsByClassName('nameOption')[i].classList.add('correct-answer');
-            if(document.getElementsByClassName('nameOption')[i].classList.contains('selectedButton')){
-                correctAnswers++
+            if (document.getElementsByClassName('nameOption')[i].classList.contains('selectedButton')) {
             }
         }
         document.querySelector('.next').disabled = false;
