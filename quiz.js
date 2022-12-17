@@ -145,7 +145,7 @@ function loadNameOptions() {
     question.names[Math.floor(Math.random() * 4)] = arrayOfStudent[question.id].name;
     while (question.names.includes('')) {
         let randomPlace = Math.floor(Math.random() * 4);
-        let randomName = students[Math.floor(Math.random() * 44)].name;
+        let randomName = students[Math.floor(Math.random() * arrayOfStudent.length)].name;
         if (question.names[randomPlace] == '' && !question.names.includes(randomName)) {
             question.names[randomPlace] = randomName; 
         }
