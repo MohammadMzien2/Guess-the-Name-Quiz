@@ -32,7 +32,7 @@ h1 {
     align-items: center;
 }
 
-.howMany {
+.Number {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -44,7 +44,7 @@ h1 {
     align-items: center;
 }
 
-.howMany span {
+.Number span {
     font-size: 30px;
 }
 
@@ -68,44 +68,16 @@ h1 {
     color: white;
     font-size: larger;
     border-radius: 15px;
+    cursor: pointer;
 }
 
-.student20 {
-    padding: 5px;
-    margin: 5px;
-    width: 15vw;
-    height: 6vh;
-    background-color: #abf6fbb5;
-    color: white;
-    font-size: larger;
-    border-radius: 15px;
-}
-
-.student43 {
-    padding: 5px;
-    margin: 5px;
-    width: 15vw;
-    height: 6vh;
-    background-color: #abf6fbb5;
-    color: white;
-    font-size: larger;
-    border-radius: 15px;
-}
 
 .student10:hover {
     background-color: #7ec5cab5;
 }
 
-.student20:hover {
-    background-color: #7ec5cab5;
-}
-
-.student43:hover {
-    background-color: #7ec5cab5;
-}
-
 .imageBox {
-    width: 62vw;
+    width: 30vw;
     height: 30vh;
     margin: 10px;
     padding: 5px;
@@ -117,7 +89,7 @@ h1 {
 }
 
 .imageBoxImg {
-    height: 130%;
+    height: 120%;
     display: none;
 }
 
@@ -142,6 +114,7 @@ h1 {
     font-size: larger;
     background-color: #abf6fbb5;
     color: white;
+    cursor: pointer;
 }
 
 .nameOption:hover {
@@ -171,9 +144,10 @@ h1 {
     font-size: larger;
     color: white;
     border-radius: 15px;
-    background-color: #abf6fbb5;
+    background-color: #59af1bb5;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .next {
@@ -185,17 +159,18 @@ h1 {
     font-size: larger;
     color: white;
     border-radius: 15px;
-    background-color: #abf6fbb5;
+    background-color: #b41d1db5;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .check:hover {
-    background-color: #7ec5cab5;
+    background-color: #bffbabb5;
 }
 
 .next:hover {
-    background-color: #7ec5cab5;
+    background-color: #c14848b5;
 }
 
 .restart {
@@ -210,6 +185,7 @@ h1 {
     background-color: #abf6fbb5;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .restart:hover {
@@ -236,12 +212,14 @@ h1 {
     }
 
     .imageBox {
-        width: 120%;
+        width: 100%;
+        height: 31vh;
+        margin-bottom: -10px;
     }
 
     .nameList {
         width: 100%;
-        height: auto;
+        height: 40vh;
         margin: 0%;
         flex-direction: column;
         align-items: center;
@@ -250,6 +228,7 @@ h1 {
     .nameOption {
         width: 90%;
         margin: 12px;
+        font-size: 24px;
     }
 
     .menu {
@@ -262,12 +241,14 @@ h1 {
 
     .check {
         width: 90%;
-        margin: 20px;
+        margin: 12px;
+        font-size: 24px;
     }
 
     .next {
         width: 90%;
-        margin: 20px;
+        margin: 10px;
+        font-size: 24px;
     }
 
     .restart {

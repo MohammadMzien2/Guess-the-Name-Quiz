@@ -10,7 +10,7 @@ let correctAnswers = 0;
 let selectedNum = 0;
 let numOfQuestions = 0;
 
-function selectHowMany(num, id) {
+function selectHowManyToChoce(num, id) {
     selectedNum = num;
     document.getElementsByClassName('student')[id].classList.add('selectedButton');
     for (let i = 0; i < document.getElementsByClassName('student').length; i++) {
@@ -21,7 +21,7 @@ function selectHowMany(num, id) {
     }
     loadArray(num);
 }
-function selectNameOption(id) {
+function selectName(id) {
     document.getElementsByClassName('nameOption')[id].classList.add('selectedButton');
     for (let i = 0; i < document.getElementsByClassName('nameOption').length; i++) {
         if (i != id) {
