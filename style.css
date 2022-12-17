@@ -115,6 +115,7 @@ h1 {
     background-color: #abf6fbb5;
     color: white;
     cursor: pointer;
+    font-size: 22px;
 }
 
 .nameOption:hover {
@@ -148,6 +149,7 @@ h1 {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-size: 24px;
 }
 
 .next {
@@ -163,6 +165,7 @@ h1 {
     justify-content: center;
     background-color: #59af1bb5;
     cursor: pointer;
+    font-size: 24px;
 }
 
 .check:hover {
@@ -186,6 +189,7 @@ h1 {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-size: 24px;
 }
 
 .restart:hover {
@@ -228,7 +232,6 @@ h1 {
     .nameOption {
         width: 90%;
         margin: 12px;
-        font-size: 24px;
     }
 
     .menu {
@@ -242,13 +245,11 @@ h1 {
     .check {
         width: 90%;
         margin: 12px;
-        font-size: 24px;
     }
 
     .next {
         width: 90%;
         margin: 10px;
-        font-size: 24px;
     }
 
     .restart {
